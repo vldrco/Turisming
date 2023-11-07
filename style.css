@@ -1,0 +1,165 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.background {
+    background-image: url('moto.gif');
+    background-size: cover;
+}
+
+header {
+    padding: 128px 16px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+    color: #000000;
+}
+
+p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    font-family: Anton;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #333333;
+}
+
+.container {
+    padding: 64px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin-top: 32px;
+}
+
+p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.pfoot {
+    color: darkgray;
+}
+
+.red-text {
+    color: #ff0000;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex: 50%;
+    padding: 20px;
+}
+
+.grid-item i {
+    font-size: 200px;
+    color: #000000;
+}
+
+.quote-container {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 64px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.5em;
+}
+
+.social-icons {
+    font-size: 2em;
+    margin-top: 32px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons i:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 64px;
+    text-align: center;
+}
+
+.pgrid1 {
+    color: #000000;
+}
+
+.pgrid2 {
+    color: #000000;
+}
+
+.background1 {
+    background-image: url('race.gif');
+    background-size: cover;
+}
+
+.background2 {
+    background-image: url('bora.gif');
+    background-size: cover;
+}
+
+.background3 {
+    background-image: url('snow.gif');
+    background-size: cover;
+}

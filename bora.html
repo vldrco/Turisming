@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turisming</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-container {
+            padding: 20px;
+        }
+
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-title {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .blog-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nav Bar -->
+<div class="container">
+    <a class="navbar-brand" href="index.html">Turisming</a>
+    <div class="background2">
+        <!--<div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="dubai.html">Dubai</a>
+            <a href="#">Bora Bora</a>
+            <a href="alpes.html">Alpes</a>
+        </div>-->
+    <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Speed Boating e Jet Ski em Bora Bora</h1>
+                <p>Descubra a Emoção das Águas Turquesas de Bora Bora</p>
+                <button>Aventure-se!</button>
+            </div>
+        </header>
+    </div>
+    <!-- Article Section -->
+    <div class="blog-container">
+        <article>
+            <h2 class="blog-title">Emoções Aquáticas em Bora Bora</h2>
+            <p class="blog-description">Defina o seu curso para o paraíso tropical de Bora Bora e descubra a beleza deslumbrante das águas cristalinas que cercam esta ilha paradisíaca. Suba a bordo de lanchas de alta velocidade e jet skis para uma experiência emocionante que vai deixar você sem fôlego.</p>
+            <p class="blog-description">Durante esta aventura aquática em Bora Bora, você terá a oportunidade de:</p>
+            <ul class="blog-description">
+                <li>Explorar as águas turquesas de Bora Bora em lanchas de alta velocidade.</li>
+                <li>Experimentar a adrenalina de pilotar um jet ski pelas águas cristalinas.</li>
+                <li>Desfrutar das vistas incríveis das montanhas verdes circundantes e do recife de coral colorido.</li>
+                <li>Maravilhar-se com a vida marinha, incluindo raias e tubarões nas águas de Bora Bora.</li>
+                <li>Relaxar em praias de areia branca e nadar nas águas mornas e transparentes.</li>
+            </ul>
+            <p class="blog-description">Se você busca aventura e emoção ou simplesmente deseja desfrutar da beleza natural de Bora Bora, nossa excursão de speed boating e jet ski tem tudo a oferecer.</p>
+        </article>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote-container">
+        <p class="quote">Ditado: "O melhor modo de viajar é conhecer novos lugares."</p>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="social-icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="pfoot">© 2023 Turisming. Todos os direitos reservados.</p>
+    </div>
+</div>
+
+<!-- Random page function-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Array of URLs
+        const Pages = [
+            "dubai.html",
+            "bora.html",
+            "alpes.html"
+        ];
+    
+        // Function to redirect to a random page
+        function redirectToRandomPage() {
+            // Random index
+            const randIndex = Math.floor(Math.random() * Pages.length);
+    
+            // Get URL corresponding to the random index
+            const randPageURL = Pages[randIndex];
+    
+            // Random redirect
+            window.location.href = randPageURL;
+        }
+    
+        // Attach click event listener to the "Aventure-se!" button
+        const avButton = document.querySelector("button");
+        avButton.addEventListener("click", redirectToRandomPage);
+    });
+    </script>
+
+</body>
+</html>

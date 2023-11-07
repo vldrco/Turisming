@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turisming</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-container {
+            padding: 20px;
+        }
+
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-title {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .blog-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nav Bar -->
+<div class="container">
+    <a class="navbar-brand" href="index.html">Turisming</a>
+    <div class="background3">
+        <!--<div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="dubai.html">Dubai</a>
+            <a href="bora.html">Bora Bora</a>
+            <a href="#">Alpes</a>
+        </div>-->
+    <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Explore os Alpes Suíços em uma Snowmobile</h1>
+                <p>Uma Aventura de Inverno Inesquecível</p>
+                <button>Aventure-se!</button>
+            </div>
+        </header>
+    </div>
+    <!-- Article Section -->
+    <div class="blog-container">
+        <article>
+            <h2 class="blog-title">Aventura nas Montanhas Suíças</h2>
+            <p class="blog-description">Descubra a beleza impressionante das montanhas cobertas de neve nos Alpes Suíços em uma emocionante viagem de snowmobile. Você será levado a paisagens de tirar o fôlego enquanto percorre trilhas cobertas de neve e florestas intocadas.</p>
+            <p class="blog-description">Durante esta aventura nas montanhas suíças, você terá a oportunidade de:</p>
+            <ul class="blog-description">
+                <li>Explorar trilhas cobertas de neve e alcançar altitudes impressionantes.</li>
+                <li>Maravilhar-se com vistas panorâmicas das montanhas e vales suíços.</li>
+                <li>Experimentar a adrenalina enquanto pilota uma snowmobile pelas paisagens de inverno.</li>
+                <li>Desfrutar de paradas pitorescas para apreciar a natureza e tirar fotos memoráveis.</li>
+                <li>Receber orientações de guias experientes para uma experiência segura e emocionante.</li>
+            </ul>
+            <p class="blog-description">Prepare-se para uma aventura gelada e inesquecível nas majestosas montanhas suíças. O inverno nos Alpes tem muito a oferecer e a snowmobile é uma maneira emocionante de explorar esta paisagem mágica.</p>
+        </article>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote-container">
+        <p class="quote">Ditado: "O melhor modo de viajar é conhecer novos lugares."</p>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="social-icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="pfoot">© 2023 Turisming. Todos os direitos reservados.</p>
+    </div>
+</div>
+
+<!-- Random page function-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Array of URLs
+        const Pages = [
+            "dubai.html",
+            "bora.html",
+            "alpes.html"
+        ];
+    
+        // Function to redirect to a random page
+        function redirectToRandomPage() {
+            // Random index
+            const randIndex = Math.floor(Math.random() * Pages.length);
+    
+            // Get URL corresponding to the random index
+            const randPageURL = Pages[randIndex];
+    
+            // Random redirect
+            window.location.href = randPageURL;
+        }
+    
+        // Attach click event listener to the "Aventure-se!" button
+        const avButton = document.querySelector("button");
+        avButton.addEventListener("click", redirectToRandomPage);
+    });
+    </script>
+
+</body>
+</html>

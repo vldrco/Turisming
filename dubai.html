@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turisming</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-container {
+            padding: 20px;
+        }
+
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-title {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .blog-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navs Bar -->
+<div class="container">
+    <a class="navbar-brand" href="index.html">Turisming</a>
+    <div class="background1">
+        <!--<div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="dubai.html">Dubai</a>
+            <a href="#">Bora Bora</a>
+            <a href="alpes.html">Alpes</a>
+        </div>-->
+    <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Descubra Dubai Sobre Rodas</h1>
+                <p>Uma Aventura Inesquecível em Terra dos Contrastens</p>
+                <button>Aventure-se!</button>
+            </div>
+        </header>
+    </div>
+    <!-- Article Section -->
+    <div class="blog-container">
+        <article>
+            <h2 class="blog-title">Explore as Dunas de Dubai</h2>
+            <p class="blog-description">Embarque em uma jornada emocionante pelas majestosas dunas de Dubai. Sinta a adrenalina enquanto pilota potentes motocicletas e veículos todo-terreno nas areias douradas do deserto. Nossos guias especializados oferecem a oportunidade de explorar a vasta paisagem desértica, desde dunas impressionantes até oásis escondidos.</p>
+            <p class="blog-description">Seja você um novato ou um piloto experiente, nossa equipe garantirá uma experiência segura e emocionante no coração do deserto.</p>
+            <p class="blog-description">Durante este passeio único, você terá a chance de:</p>
+            <ul class="blog-description">
+                <li>Experimentar a emoção de pilotar veículos todo-terreno de última geração.</li>
+                <li>Explorar dunas emocionantes e apreciar vistas panorâmicas espetaculares.</li>
+                <li>Visitar oásis secretos e aprender sobre a vida no deserto.</li>
+                <li>Sentir a hospitalidade árabe com uma pausa para o chá em um acampamento beduíno tradicional.</li>
+            </ul>
+            <p class="blog-description">Não perca a oportunidade de vivenciar uma das aventuras mais emocionantes em Dubai. Prepare-se para uma jornada inesquecível no deserto com Turisming!</p>
+        </article>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote-container">
+        <p class="quote">Ditado: "O melhor modo de viajar é conhecer novos lugares."</p>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="social-icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="pfoot">© 2023 Turisming. Todos os direitos reservados.</p>
+    </div>
+</div>
+
+<!-- Random page function-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Array of URLs
+        const Pages = [
+            "dubai.html",
+            "bora.html",
+            "alpes.html"
+        ];
+    
+        // Function to redirect to a random page
+        function redirectToRandomPage() {
+            // Random index
+            const randIndex = Math.floor(Math.random() * Pages.length);
+    
+            // Get URL corresponding to the random index
+            const randPageURL = Pages[randIndex];
+    
+            // Random redirect
+            window.location.href = randPageURL;
+        }
+    
+        // Attach click event listener to the "Aventure-se!" button
+        const avButton = document.querySelector("button");
+        avButton.addEventListener("click", redirectToRandomPage);
+    });
+    </script>
+
+</body>
+</html>
